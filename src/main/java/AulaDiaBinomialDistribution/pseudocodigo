@@ -1,0 +1,31 @@
+Constantes:
+    COIN_TOSSES ← 100
+    LINES_IN_DIAGRAM ← 30
+
+Classe BinomialDistribution:
+    Atributos:
+        num, prob, result
+
+    Classe interna Coin:
+        Método toss():
+            Retorna true com probabilidade prob
+
+    Construtor(n, p):
+        num ← n
+        prob ← p
+
+    Método experiment():
+        Realiza 'num' lançamentos de moeda com probabilidade 'prob'
+        Conta quantas vezes deu "cara"
+        Retorna esse total
+
+Main(p, p2, m):
+    Criar dist1 com probabilidade p
+    Criar dist2 com probabilidade p2
+
+    Repetir m vezes:
+        Executar dist1.experiment() e armazenar em data1
+        Executar dist2.experiment() e armazenar em data2
+
+    Somar data1 e data2
+    Imprimir dados e gerar diagrama
